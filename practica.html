@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <table border="1">
+    <tbody id ="cuerpo">
+      
+      
+    </tbody>
+  </table>
+  <script>
+    let filas, columnas;
+  do{
+    filas = parseInt(prompt('Escribe las filas:'));
+    columnas = parseInt(prompt('Escribe columnas:'));
+   } while(filas <= 0 || columnas <= 0);
+   let tbody = document.querySelector('#cuerpo');
+   let tr = document.createElement('tr');
+   let td = document.createElement('td');
+   for(let i = 0; i < filas.length; i++){
+    
+    for(let j = 0; j < columnas.length;j++){
+      
+      td.textContent = j;
+      tr.appendChild(td);
+    }
+    tbody[0].appendChild(tr);
+   }
+
+  
+  
+  
+
+  
+  
+  
+  </script>
+</body>
+</html>
